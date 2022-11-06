@@ -34,6 +34,7 @@ navbar starts from here */
 .sticky {
   position: fixed;
   top: 0;
+  left: 0;
   background-color: rgb(80, 186, 252);
   color: #fff;
   width: 100%;
@@ -405,6 +406,9 @@ navbar starts from here */
 @media screen and (max-width: 280px) {
   .sticky a {
     color: rgb(185, 113, 113);
+  }
+  .sticky {
+    height: 65px;
   }
   .strict {
     width: 100%;
