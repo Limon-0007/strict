@@ -403,6 +403,9 @@ navbar starts from here */
 }
 
 @media screen and (max-width: 280px) {
+  .sticky a {
+    color: rgb(185, 113, 113);
+  }
   .strict {
     width: 100%;
   }
