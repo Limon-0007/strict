@@ -1,0 +1,356 @@
+/* some useful links and same css for all */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* 
+navbar starts from here */
+
+.nav-link {
+  color: #252525;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.nav-link:hover {
+  color: #979494;
+  font-size: 15px;
+}
+
+/* strict section starts from here */
+
+.strict {
+  background: url(images/Image.png);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.strict h1 {
+  font-weight: 700;
+  font-size: 80px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.strict h1::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  bottom: -15px;
+  height: 2px;
+  width: 350px;
+  background-color: rgba(21, 164, 250, 1);
+}
+
+.strict h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.btn {
+  border: 2px solid rgba(21, 164, 250, 1);
+  margin-top: 30px;
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.5s all;
+}
+
+.btn:hover {
+  background-color: rgba(21, 164, 250, 1);
+}
+
+.icon a {
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* strict section ends here */
+
+/* simple & pure design section starts here */
+
+.simple-section {
+  background-color: rgba(246, 249, 249, 1);
+  padding: 60px;
+}
+.text h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #2d3950;
+}
+
+.texts h6 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 20px;
+}
+
+/* simple & pure design section ends here */
+
+/* optimized section starts here */
+
+.optimized {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 60px;
+}
+.optimized .icons {
+  background-color: rgba(72, 186, 255, 1);
+  padding: 30px;
+  color: #fff;
+  border-radius: 3px;
+  position: relative;
+  left: 30%;
+}
+
+.optimized .icons i {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.icons .fa-paper-plane {
+  font-size: 25px;
+}
+
+.icons .fa-microchip {
+  font-size: 25px;
+}
+
+.text h6 {
+  color: #2d3950;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.text p {
+  color: #999999;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* optimized section ends here */
+
+/* images section starts from here */
+
+.images-text h1 {
+  font-size: 41px;
+  font-weight: 400;
+  color: #2d3950;
+  margin-bottom: 10px;
+}
+
+.images-text h6 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #909090;
+  margin-bottom: 60px;
+}
+
+.images img {
+  border-radius: 2px;
+}
+
+.links {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.links i {
+  border: 2px solid #fff;
+  padding: 8px;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease-out;
+}
+
+.image:hover img {
+  transform: scale(1.2);
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(21, 164, 250, 1);
+  z-index: 99;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.image:hover .bg {
+  opacity: 0.5;
+}
+
+.image:hover .links {
+  opacity: 1;
+}
+
+/* images section ends here */
+
+/* footer section starts from here */
+
+.footer {
+  margin-top: 60px;
+  background: url(images/Layer\ 36.jpg);
+  height: 90vh;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.footer-text {
+  padding: 50px;
+  opacity: 1;
+}
+
+.footer-text h4 {
+  font-size: 41px;
+  font-weight: 400;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.footer-text p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form input {
+  height: 50px;
+  width: 400px;
+  border: 2px solid #f6f9f900;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(246, 249, 249, 0);
+  border: 1px solid rgba(153, 153, 153, 1);
+}
+
+.form textarea {
+  height: 100px;
+  width: 400px;
+  border: 2px solid #f6f9f900;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(246, 249, 249, 0);
+  border: 1px solid rgba(153, 153, 153, 1);
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+.check div {
+  display: flex;
+}
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.check .checkbox {
+  margin-top: 2px;
+  height: 18px;
+  width: 18px;
+}
+
+.check h6 {
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.check .form-btn {
+  padding: 8px 25px;
+  background-color: rgba(246, 249, 249, 0);
+  border: 2px solid rgba(21, 164, 250, 1);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.check .form-btn:hover {
+  background-color: rgba(21, 164, 250, 1);
+}
+
+/* footer section ends here */
+
+/* last section starts from here */
+
+.last-text h6 {
+  color: #999999;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.last-icons span {
+  padding: 6px;
+  background-color: rgba(21, 164, 250, 1);
+  height: 43px;
+  width: 30px;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.last-icons span a i {
+  height: 43px;
+  width: 43px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.last-icons span:hover {
+  background-color: rgb(95, 139, 167);
+}
