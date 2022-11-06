@@ -16,12 +16,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
     <!-- navbar starts from here -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="navBar">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="images/Logo.png" alt=""
@@ -57,9 +58,9 @@
 
     <section class="container">
       <div class="strict">
-        <h1>STRICT</h1>
-        <h4>STRICT is a responsive theme with a a clean and minimal look.</h4>
-        <button class="btn">Call to action</button>
+        <h1 class="wow bounceInDown">STRICT</h1>
+        <h4 class="wow bounceInLeft text-center">STRICT is a responsive theme with a clean and minimal look.</h4>
+        <button class="btn wow bounceInUp">Call to action</button>
         <span class="icon"
           ><a href="#"><i class="fa-sharp fa-solid fa-chevron-down"></i></a
         ></span>
@@ -70,7 +71,7 @@
 
     <!-- simple & pure design section starts here -->
 
-    <section class="container simple-section">
+    <section class="container simple-section wow fadeInLeft">
       <div class="texts text-center">
         <h1>Simple & pure design.</h1>
         <h6>
@@ -87,7 +88,7 @@
 
     <!-- optimized section starts here -->
 
-    <section class="container optimized">
+    <section class="container optimized wow fadeInRight">
       <div class="row d-flex g-5">
         <div class="col-lg-4 col-md-4 col-sm-12">
           <span class="icons">
@@ -135,10 +136,10 @@
 
     <section class="container">
       <div class="images-text text-center mb-5">
-        <h1>Showcase your work like a pro.</h1>
-        <h6>Contact me if you like my work</h6>
+        <h1 class="wow slideInLeft">Showcase your work like a pro.</h1>
+        <h6 class="wow slideInRight">Contact me if you like my work</h6>
       </div>
-      <div class="container g-0">
+      <div class="container g-0 wow fadeInLeft" data-wow-delay="0.4s">
         <div class="row g-4 images">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="image">
@@ -213,7 +214,10 @@
 
     <!-- footer section starts here -->
 
-    <section class="container footer">
+    <section class="container footer wow fadeInRight" data-wow-delay="0.4s">
+
+      <div class="dark-bg"></div>
+
       <div class="footer-text text-center">
         <h4>Stay with us</h4>
         <p>We ensure quailty & support</p>
@@ -251,10 +255,10 @@
     <!-- last section starts here -->
 
     <section class="container last justify-content-around mt-5 mb-3 d-flex">
-      <div class="last-text">
+      <div class="last-text wow slideInLeft">
         <h6>Copyritht 2014, STRICT</h6>
       </div>
-      <div class="last-icons">
+      <div class="last-icons wow slideInRight">
         <span
           ><a href="#"><i class="fa-brands fa-facebook-f"></i></a
         ></span>
@@ -273,6 +277,9 @@
       </div>
     </section>
 
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
