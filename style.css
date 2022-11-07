@@ -395,12 +395,17 @@ navbar starts from here */
 
 @media screen and (max-width: 420px) {
   .strict {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
   }
   .strict h1::before {
     left: -20px;
     width: 220px;
+  }
+
+  .strict span a i {
+    position: relative;
+    top: -100px;
   }
 
   .sticky a {
@@ -477,7 +482,13 @@ navbar starts from here */
     height: 65px;
   }
   .strict {
+    height: 80vh;
     width: 100%;
+  }
+
+  .strict span a i {
+    position: relative;
+    top: -100px;
   }
   .strict h1 {
     font-size: 50px;
