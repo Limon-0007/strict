@@ -395,11 +395,77 @@ navbar starts from here */
 
 @media screen and (max-width: 420px) {
   .strict {
+    height: 60vh;
     width: 100%;
   }
   .strict h1::before {
-    left: 0;
-    width: 270px;
+    left: -20px;
+    width: 220px;
+  }
+
+  .sticky a {
+    color: rgb(185, 113, 113);
+  }
+  .sticky {
+    height: 65px;
+  }
+  .strict h1 {
+    font-size: 50px;
+  }
+  .strict h4 {
+    font-size: 13px;
+  }
+
+  .footer {
+    background-position: center;
+    height: 60vh;
+    width: 90%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+
+  .form input {
+    height: 30px;
+    width: 200px;
+  }
+
+  .form textarea {
+    height: 60px;
+    width: 200px;
+  }
+
+  .check .checkbox {
+    height: 9px;
+    width: 9px;
+  }
+
+  .check h6 {
+    font-size: 13px;
+  }
+
+  .check {
+    display: block;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .check .form-btn {
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-right: 20px;
+  }
+  .last {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .last-text {
+    margin-bottom: 10px;
   }
 }
 
