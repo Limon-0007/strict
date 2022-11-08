@@ -9,8 +9,25 @@
   font-family: "Lato", sans-serif;
 }
 
-/* 
-navbar starts from here */
+.darkmode-toggle {
+    background: #100f2c;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    border-radius: 50%;
+    right: 32px;
+    bottom: 32px;
+    left: unset;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*navbar starts from here */
 
 .nav-link {
   color: #252525;
@@ -19,6 +36,7 @@ navbar starts from here */
   cursor: pointer;
   transition: 0.4s ease;
   margin-right: 10px;
+  isolation: isolate;
 }
 
 .nav-link:nth-child(6) {
@@ -61,6 +79,7 @@ navbar starts from here */
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  isolation: isolate;
 }
 
 .strict h1 {
@@ -377,6 +396,7 @@ navbar starts from here */
   width: 30px;
   border-radius: 2px;
   transition: 0.5s;
+  isolation: isolate;
 }
 
 .last-icons span a i {
@@ -392,6 +412,17 @@ navbar starts from here */
 }
 
 /* responsive section starts from here */
+@media screen and (width: 540px) {
+   .optimized .icons {
+    left: 40%;
+  } 
+}
+@media screen and (width: 320px) {
+  .optimized .icons {
+   left: 28%;
+   padding: 25px 15px;
+ } 
+}
 
 @media screen and (max-width: 420px) {
   .strict {
@@ -419,6 +450,9 @@ navbar starts from here */
   }
   .strict h4 {
     font-size: 13px;
+  }
+  .optimized i{
+    padding: 0px 20px;
   }
 
   .footer {
@@ -500,6 +534,11 @@ navbar starts from here */
   .strict h4 {
     font-size: 13px;
   }
+
+  .optimized i{
+    padding: 0px;
+  }
+
 
   .footer {
     background-position: center;
